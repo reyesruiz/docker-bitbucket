@@ -7,7 +7,7 @@ ENV   DB_SUPPORT=default \
 
 RUN \
   rpm --rebuilddb && yum clean all && \
-  yum install -y java-1.8.0-openjdk tar mariadb && \
+  yum install -y java-1.8.0-openjdk tar mariadb git && \
   yum clean all && \
   curl -L https://www.atlassian.com/software/stash/downloads/binary/atlassian-bitbucket-${BITBUCKET_VERSION}-x64.bin -o /tmp/bitbucket.bin && \
   chmod +x /tmp/bitbucket.bin
