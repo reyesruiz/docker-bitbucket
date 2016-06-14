@@ -32,7 +32,14 @@ install_bitbucket() {
     ./bitbucket.bin <<<"o
 1
 1
+
+
+
+
+y
 i
+y
+n
 "
     ## Check Supported version of database specified by user on docker run.
     if [[ ${DB_SUPPORT} == "mysql" || ${DB_SUPPORT} == "mariadb" ]]; then
