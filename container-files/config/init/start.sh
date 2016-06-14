@@ -31,6 +31,7 @@ install_bitbucket() {
     cd /tmp
     ./bitbucket.bin <<<"o
 1
+1
 i
 "
     ## Check Supported version of database specified by user on docker run.
