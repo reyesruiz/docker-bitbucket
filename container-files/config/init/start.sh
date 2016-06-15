@@ -48,6 +48,8 @@ n
       log "MySQL/MariaDB Support ${bold}${red}[Not Installed]${reset}"
     fi
     log "BITBUCKET server installed."
+    ##soft link to start-bitbucket.sh
+    ln -s ${INSTALL_DIR}/bin/start-bitbucket.sh /opt/atlassian/bitbucket/start-bitbucket.sh
     stop_bitbucket
     ## Clean all installation directories from trash.
     clean_all
