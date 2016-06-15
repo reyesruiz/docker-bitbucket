@@ -1,5 +1,3 @@
-#!/bin/sh
-set -eu
 export TERM=xterm
 
 # Bash Colors
@@ -12,7 +10,7 @@ reset=`tput sgr0`
 separator=$(echo && printf '=%.0s' {1..100} && echo)
 
 #OS VARIABLES
-INSTALL_DIR='/opt/atlassian/bitbucket'
+INSTALL_DIR="/opt/atlassian/bitbucket/${BITBUCKET_VERSION}"
 INSTALL_FILE='/tmp/bitbucket.bin'
 
 # Functions
@@ -22,7 +20,7 @@ log() {
 }
 stop_bitbucket() {
   log "Stopping Bitbucket"
-  /opt/atlassian/bitbucket/bin/stop-bitbucket.sh
+  ${BITBUCKET_VERSION}/stop-bitbucket.sh
   log "Bitbucket Stopped"
 }
 install_bitbucket() {
