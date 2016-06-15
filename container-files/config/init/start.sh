@@ -20,7 +20,7 @@ log() {
 }
 stop_bitbucket() {
   log "Stopping Bitbucket"
-  ${INSTALL_DIR}/stop-bitbucket.sh
+  ${INSTALL_DIR}/bin/stop-bitbucket.sh
   log "Bitbucket Stopped"
 }
 install_bitbucket() {
