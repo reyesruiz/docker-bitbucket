@@ -2,7 +2,7 @@ Atlassian's Bitbucket
 ----------------------------------------
 [reyesruiz/docker-bitbucket][1]
 
-[Apache Trafic Server][0]
+[Atlassian's Bitbucket][0]
 
 #### Build
  - Centos: 7
@@ -10,7 +10,7 @@ Atlassian's Bitbucket
 
 
 ### Tags
- - latest	(4.6.2)
+ - latest	(4.12.1)
 
 ### Installation
  - Install Data Container
